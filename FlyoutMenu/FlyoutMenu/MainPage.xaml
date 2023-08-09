@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FlyoutMenu.MainPage">
+
+    <Label Text="Right click here">
+
+
+        <FlyoutBase.ContextFlyout>
+
+            <MenuFlyout x:Name="RightClickMenu" FlyoutItem.IsVisible="False">
+                <!--Add to Album-->
+
+                <MenuFlyoutSubItem Text ="Add to Album" FlyoutItem.IsVisible ="False">
+                    <MenuFlyoutItem Text="Create New"/>
+                </MenuFlyoutSubItem>
+                <!--Save-->
+
+                <MenuFlyoutItem Text="Save" />
+
+                <!--Share-->
+
+                <MenuFlyoutSubItem Text="Share">
+                    <MenuFlyoutItem Text="Facebook"/>
+                    <MenuFlyoutItem Text="Twitter"/>
+                </MenuFlyoutSubItem>
+                
+
+                <!--Delete-->
+                <MenuFlyoutItem Text="Delete" />
+
+            </MenuFlyout>
+
+        </FlyoutBase.ContextFlyout>
+
+    </Label>
+
+</ContentPage>
+
