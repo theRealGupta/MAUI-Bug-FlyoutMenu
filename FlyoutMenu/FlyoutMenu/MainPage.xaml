@@ -8,10 +8,10 @@
 
         <FlyoutBase.ContextFlyout>
 
-            <MenuFlyout x:Name="RightClickMenu" FlyoutItem.IsVisible="False">
+            <MenuFlyout x:Name="RightClickMenu">
                 <!--Add to Album-->
 
-                <MenuFlyoutSubItem Text ="Add to Album" FlyoutItem.IsVisible ="False">
+                <MenuFlyoutSubItem Text ="Add to Album">
                     <MenuFlyoutItem Text="Create New"/>
                 </MenuFlyoutSubItem>
                 <!--Save-->
